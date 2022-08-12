@@ -10,6 +10,8 @@ export async function rollDice (
   wound,
   applyWounds,
   specialtyLabel,
+  autoSuccess = 0,
+  isDamageOrSoak = false
 ) {
   // console.log(wound, applyWounds)
   function healthModifier (wound) {
@@ -31,10 +33,14 @@ export async function rollDice (
   const roll = new Roll(dice + 'dvcs>11 + ' + 0 + 'dhcs>11', actor.data.data)
   await roll.evaluate()
   let difficultyResult = '<span></span>'
-  let success = 0
+  let success = autoSuccess || 0
   let hadASuccess = false
   let hadAOne = false
   let chanceDieSuccess = false
+
+//   console.log('AUTOSUCCESS ->', autoSuccess)
+//   console.log('SUCCESS ->', success)
+//   console.log('IS SOAK ->', isDamageOrSoak)
   roll.terms[0].results.forEach((dice) => {
     if (numDice + healthModifier(wound) <= 0 && dice.result === 10) {
       chanceDieSuccess = true
@@ -48,7 +54,7 @@ export async function rollDice (
           success++
         }
         hadASuccess = true
-      } else {
+      } else if (!isDamageOrSoak) {
         if (dice.result === 1) {
           success--
           hadAOne = true

@@ -19,7 +19,7 @@
           "max": 0
         },
         "humanityLabel" : {
-          "value" : "Humanity"
+          "value" : "Humanidade"
         },
         "humanity": {
           "value": 0,
@@ -216,9 +216,9 @@
             "value" : 0, 
             "name" : "VTM5E.Enigmas"
           },
-          "awareness": {
+          "dodge": {
             "value": 0,
-            "name": "VTM5E.Awareness"
+            "name": "VTM5E.Dodge"
           },
           "commerce" : {
             "value" : 0, 
@@ -531,9 +531,9 @@
             "name": "VTM5E.Computer"
           },
 
-          "awareness": {
+          "dodge": {
             "value": 0,
-            "name": "VTM5E.Awareness"
+            "name": "VTM5E.Dodge"
           },
           "drive": {
             "value": 0,
@@ -625,9 +625,9 @@
             "name": "VTM5E.Survival"
           },
       
-          "technology": {
+          "linguistics": {
             "value": 0,
-            "name": "VTM5E.Technology"
+            "name": "VTM5E.Linguistics"
           }
         }
       },

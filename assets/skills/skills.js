@@ -5,7 +5,7 @@ export const skillsModern = [
     { name:"athletics", loc: "VTM5E.Athletics" },
     { name:"craft", loc: "VTM5E.Craft" },
     { name:"computer", loc: "VTM5E.Computer" },
-    { name:"awareness", loc: "VTM5E.Awareness" },
+    { name:"dodge", loc: "VTM5E.Dodge" },
     { name:"drive", loc: "VTM5E.Drive" },
     { name:"finance", loc: "VTM5E.Finance" },
     { name:"brawl", loc: "VTM5E.Brawl" },
@@ -28,7 +28,7 @@ export const skillsModern = [
     { name:"Science", loc: "VTM5E.Science" },
     { name:"subterfuge", loc: "VTM5E.Subterfuge" },
     { name:"survival", loc: "VTM5E.Survival" },
-    { name:"technology", loc: "VTM5E.Technology" }
+    { name:"linguistics", loc: "VTM5E.Linguistics" }
 ]
 
 export const skillsDa = [
@@ -38,7 +38,7 @@ export const skillsDa = [
     { name:"athletics", loc:"VTM5E.Athletics"},
     { name:"archery", loc:"VTM5E.Archery"},
     { name:"enigmas", loc:"VTM5E.Enigmas"},
-    { name:"awareness", loc:"VTM5E.Awareness"},
+    { name:"dodge", loc:"VTM5E.Dodge"},
     { name:"commerce", loc:"VTM5E.Commerce"},
     { name:"hearthWisdom", loc:"VTM5E.HearthWisdom"},
     { name:"brawl", loc:"VTM5E.Brawl"},
@@ -71,7 +71,7 @@ export const skillsWild = [
     { name:"athletics", loc:"VTM5E.Athletics"},
     { name:"craft", loc:"VTM5E.Craft"},
     { name:"culture", loc:"VTM5E.Culture"},
-    { name:"awareness", loc:"VTM5E.Awareness"},
+    { name:"dodge", loc:"VTM5E.Dodge"},
     { name:"etiquette", loc:"VTM5E.Etiquette"},
     { name:"enigmas", loc:"VTM5E.Enigmas"},
     { name:"brawl", loc:"VTM5E.Brawl"},
