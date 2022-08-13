@@ -156,6 +156,7 @@ export class MortalActorSheet extends CoterieActorSheet {
           const rollStrength = html.find("#rollstrength")[0]?.checked || false
           const rollPotence = html.find("#rollpotence")[0]?.checked || false
           let numDice = 0
+          let autoSuccess = 0
 
           if(rollStrength) {
             let strength = this.actor.data.data.abilities['strength']?.value + (this.actor.data.data.abilities['strength']?.buff ? 
@@ -173,8 +174,10 @@ export class MortalActorSheet extends CoterieActorSheet {
               potence = 0
             }
 
-            numDice += potence
+            autoSuccess += potence
           }
+
+          console.log('POTENCIA ->', autoSuccess)
 
           let weaponDamage = parseInt(html.find("#weaponDamage")[0].value || 0) 
           if(Number.isNaN(weaponDamage)) {
@@ -207,7 +210,9 @@ export class MortalActorSheet extends CoterieActorSheet {
             specialty,
             this.actor.data.data.health.state,
             applyWounds,
-            specialtyLabel
+            specialtyLabel,
+            autoSuccess,
+            true
           )
         }
       },
@@ -429,7 +434,9 @@ export class MortalActorSheet extends CoterieActorSheet {
             specialty,
             this.actor.data.data.health.state,
             false,
-            specialtyLabel
+            specialtyLabel,
+            0,
+            true
           )
         }
       },

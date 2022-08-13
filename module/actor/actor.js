@@ -5,14 +5,14 @@
  * @extends {Actor}
  */
 const WoundLevels = [
-  "Healthy",
-  "Bruised",
-  "Hurt",
-  "Injured",
-  "Wounded",
-  "Mauled",
-  "Crippled",
-  "Incapacitated",
+  "Saudavel",
+  "Escoriado",
+  "Machucado",
+  "Ferido",
+  "Ferido gravemente",
+  "Espancado",
+  "Aleijado",
+  "Incapacitado",
 ]
 
 const WoundModifierText = [
